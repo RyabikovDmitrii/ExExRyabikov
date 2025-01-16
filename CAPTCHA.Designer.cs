@@ -33,6 +33,7 @@ namespace ExExRyabikov
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.authBtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.captchaTB = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,22 +58,32 @@ namespace ExExRyabikov
             // authBtn
             // 
             this.authBtn.BackColor = System.Drawing.Color.White;
-            this.authBtn.Location = new System.Drawing.Point(55, 262);
+            this.authBtn.Location = new System.Drawing.Point(56, 310);
             this.authBtn.Name = "authBtn";
             this.authBtn.Size = new System.Drawing.Size(262, 52);
             this.authBtn.TabIndex = 6;
             this.authBtn.Text = "Создать новую CAPTCHA";
             this.authBtn.UseVisualStyleBackColor = false;
+            this.authBtn.Click += new System.EventHandler(this.authBtn_Click);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(55, 335);
+            this.button1.Location = new System.Drawing.Point(56, 368);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(262, 52);
             this.button1.TabIndex = 7;
             this.button1.Text = "Проверить";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // captchaTB
+            // 
+            this.captchaTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.captchaTB.Location = new System.Drawing.Point(56, 266);
+            this.captchaTB.Name = "captchaTB";
+            this.captchaTB.Size = new System.Drawing.Size(261, 38);
+            this.captchaTB.TabIndex = 8;
             // 
             // CAPTCHA
             // 
@@ -81,6 +92,8 @@ namespace ExExRyabikov
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(202)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(372, 447);
+            this.ControlBox = false;
+            this.Controls.Add(this.captchaTB);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.authBtn);
             this.Controls.Add(this.pictureBox1);
@@ -105,5 +118,6 @@ namespace ExExRyabikov
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button authBtn;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox captchaTB;
     }
 }

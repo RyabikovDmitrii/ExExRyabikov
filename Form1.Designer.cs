@@ -29,6 +29,7 @@ namespace ExExRyabikov
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.wLB = new System.Windows.Forms.Label();
             this.loginLB = new System.Windows.Forms.Label();
             this.loginTB = new System.Windows.Forms.TextBox();
@@ -97,12 +98,14 @@ namespace ExExRyabikov
             // showPasswdBtn
             // 
             this.showPasswdBtn.BackColor = System.Drawing.Color.White;
+            this.showPasswdBtn.Image = ((System.Drawing.Image)(resources.GetObject("showPasswdBtn.Image")));
             this.showPasswdBtn.Location = new System.Drawing.Point(320, 265);
             this.showPasswdBtn.Name = "showPasswdBtn";
             this.showPasswdBtn.Size = new System.Drawing.Size(40, 40);
             this.showPasswdBtn.TabIndex = 6;
             this.showPasswdBtn.Text = "`";
             this.showPasswdBtn.UseVisualStyleBackColor = false;
+            this.showPasswdBtn.Click += new System.EventHandler(this.showPasswdBtn_Click);
             // 
             // Form1
             // 
