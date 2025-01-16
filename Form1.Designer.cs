@@ -103,6 +103,7 @@ namespace ExExRyabikov
             this.showPasswdBtn.TabIndex = 6;
             this.showPasswdBtn.Text = "`";
             this.showPasswdBtn.UseVisualStyleBackColor = false;
+            this.showPasswdBtn.Click += new System.EventHandler(this.showPasswdBtn_Click);
             // 
             // Form1
             // 

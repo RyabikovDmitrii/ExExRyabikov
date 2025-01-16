@@ -12,6 +12,7 @@ namespace ExExRyabikov
 {
     public partial class Form1 : Form
     {
+        private bool passwordVisible = false;
         public Form1()
         {
             InitializeComponent();
@@ -24,6 +25,8 @@ namespace ExExRyabikov
             if (user == Properties.Settings.Default.Username && pwd == Properties.Settings.Default.Password)
             {
                 MessageBox.Show("Успешный вход!");
+                loginTB.Text = "";
+                passwdTB.Text = "";
                 Hide();
                 using (menu menu = new menu())
                 {
@@ -49,6 +52,12 @@ namespace ExExRyabikov
         {
 
 
+        }
+
+        private void showPasswdBtn_Click(object sender, EventArgs e)
+        {
+            passwordVisible = !passwordVisible;
+            passwdTB.PasswordChar = passwordVisible ? '\0' : '*';
         }
     }
 }
