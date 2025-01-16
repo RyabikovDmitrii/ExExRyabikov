@@ -70,6 +70,7 @@ namespace ExExRyabikov
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.Location = new System.Drawing.Point(50, 265);
             this.textBox1.Name = "textBox1";
+            this.textBox1.PasswordChar = '*';
             this.textBox1.Size = new System.Drawing.Size(262, 38);
             this.textBox1.TabIndex = 4;
             // 
@@ -95,12 +96,13 @@ namespace ExExRyabikov
             // 
             // showPasswdBtn
             // 
+            this.showPasswdBtn.BackColor = System.Drawing.Color.White;
             this.showPasswdBtn.Location = new System.Drawing.Point(320, 265);
             this.showPasswdBtn.Name = "showPasswdBtn";
             this.showPasswdBtn.Size = new System.Drawing.Size(40, 40);
             this.showPasswdBtn.TabIndex = 6;
             this.showPasswdBtn.Text = "`";
-            this.showPasswdBtn.UseVisualStyleBackColor = true;
+            this.showPasswdBtn.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
