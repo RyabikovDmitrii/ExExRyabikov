@@ -32,8 +32,8 @@ namespace ExExRyabikov
             this.wLB = new System.Windows.Forms.Label();
             this.loginLB = new System.Windows.Forms.Label();
             this.loginTB = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.passwdTB = new System.Windows.Forms.Label();
+            this.passwdTB = new System.Windows.Forms.TextBox();
+            this.passwdLB = new System.Windows.Forms.Label();
             this.authBtn = new System.Windows.Forms.Button();
             this.showPasswdBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -65,23 +65,23 @@ namespace ExExRyabikov
             this.loginTB.Size = new System.Drawing.Size(262, 38);
             this.loginTB.TabIndex = 2;
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(50, 265);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(262, 38);
-            this.textBox1.TabIndex = 4;
-            // 
             // passwdTB
             // 
-            this.passwdTB.AutoSize = true;
-            this.passwdTB.Location = new System.Drawing.Point(46, 228);
+            this.passwdTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.passwdTB.Location = new System.Drawing.Point(50, 265);
             this.passwdTB.Name = "passwdTB";
-            this.passwdTB.Size = new System.Drawing.Size(76, 24);
-            this.passwdTB.TabIndex = 3;
-            this.passwdTB.Text = "Пароль";
+            this.passwdTB.PasswordChar = '*';
+            this.passwdTB.Size = new System.Drawing.Size(262, 38);
+            this.passwdTB.TabIndex = 4;
+            // 
+            // passwdLB
+            // 
+            this.passwdLB.AutoSize = true;
+            this.passwdLB.Location = new System.Drawing.Point(46, 228);
+            this.passwdLB.Name = "passwdLB";
+            this.passwdLB.Size = new System.Drawing.Size(76, 24);
+            this.passwdLB.TabIndex = 3;
+            this.passwdLB.Text = "Пароль";
             // 
             // authBtn
             // 
@@ -113,8 +113,8 @@ namespace ExExRyabikov
             this.ClientSize = new System.Drawing.Size(372, 447);
             this.Controls.Add(this.showPasswdBtn);
             this.Controls.Add(this.authBtn);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.passwdTB);
+            this.Controls.Add(this.passwdLB);
             this.Controls.Add(this.loginTB);
             this.Controls.Add(this.loginLB);
             this.Controls.Add(this.wLB);
@@ -137,8 +137,8 @@ namespace ExExRyabikov
         private System.Windows.Forms.Label wLB;
         private System.Windows.Forms.Label loginLB;
         private System.Windows.Forms.TextBox loginTB;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label passwdTB;
+        private System.Windows.Forms.TextBox passwdTB;
+        private System.Windows.Forms.Label passwdLB;
         private System.Windows.Forms.Button authBtn;
         private System.Windows.Forms.Button showPasswdBtn;
     }
